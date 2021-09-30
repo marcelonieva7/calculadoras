@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Leandro Villarreal & Asociados</title>
+        <link href="css/styles.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="img/icon.png">
+    </head>
+    <body style="font-family: 'Montserrat', sans-serif; font-weight: bolder;">
+
+        
+        <section id="calculadoras">
+            <div class="container" style="padding: 2%; min-width: 90%;">
+                <div class="row" style="padding: 2%; column-gap: 1%;">
+                    <div class="col-sm" style="border: 2px solid; border-radius: 1rem; border-color: #264653; padding: 2%;">
+                        <h1 style="font-size: 1.4rem; font-weight: bolder;"><u>Calculadora</u> <u>de</u> <u>Indemnización</u> <u>por</u> <u>Despido</u> <u>de</u> <u>Trabajo</u> <u>o</u> <u>Enfermedad</u>:</h1><br>
+                        <h1 style="font-size: 1.2rem; font-weight: bolder;"></h1>Edad: <input type="number" name="edad" id="edad" step="1" style="font-weight: bolder; height: 1.5rem; width: 4rem; margin: 0%; padding: 0%;"> años</h1><br><br>
+                        <h1 style="font-size: 1.2rem; font-weight: bolder;"></h1>Porcentaje de Incapacidad: <input type="number" name="porcentaje" id="porcentaje" step="0.1" style="font-weight: bolder; height: 1.5rem; width: 3rem; margin: 0%; padding: 0%;"> %</h1><br><br>
+                        <h1 style="font-size: 1.2rem; font-weight: bolder;"></h1>Ingreso Base Mensual: $<input type="number" name="ingreso" id="ingreso" step="10"  style="font-weight: bolder; height: 1.5rem; width: 5rem; margin: 0%; padding: 0%;"></h1><br><br>
+                        <label for="accidente">Lugar de Accidente: </label>
+                        <select style= "font-weight: bolder;" id="accidente">
+                        <option style= "font-weight: bolder;" value="En el trabajo">En el Trabajo</option>
+                        <option style= "font-weight: bolder;" value="In itinere">In itinere</option>
+                        </select><br><br>
+                        <input style="font-weight: bolder;" type="button" value="Calcular"> <input type="text" id="indemnización" style="font-weight: bolder; width: 5rem; height: 1.7rem;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>     
+    </body>
+</html>

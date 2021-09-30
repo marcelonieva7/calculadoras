@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Leandro Villarreal & Asociados</title>
+        <link href="css/styles.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="img/icon.png">
+    </head>
+    <body style="font-family: 'Montserrat', sans-serif; font-weight: bolder;">
+
+        
+        <section id="calculadoras">
+            <div class="container" style="padding: 2%; min-width: 90%;">
+                <div class="row" style="padding: 2%; column-gap: 1%;">
+                    <div class="col-sm" style="border: 2px solid; border-radius: 1rem; border-color: #264653; padding: 2%;">
+                        <h1 style="font-size: 1.4rem; font-weight: bolder;"><u>Calculadora</u> <u>de</u> <u>Indemnización</u> <u>por</u> <u>Despido</u>:</h1><br>
+                        <h1 style="font-size: 1.2rem; font-weight: bolder;"></h1>Sueldo Mensual Bruto (ultimos 12 meses): $<input  type="number" name="sueldo" id="sueldo" step="10" style="font-weight: bolder; height: 1.5rem; width: 5rem; margin: 0%; padding: 0%;"></h1><br><br>
+                        <h1 style="font-size: 1.2rem; font-weight: bolder;"></h1>Ingrese su antiguedad en años: <input  type="number" name="antigüedad" id="antigüedad" step="1" style="font-weight: bolder; height: 1.5rem; width: 3rem; margin: 0%; padding: 0%;"></h1><br><br>
+                        <label for="despido">Preaviso de Despido: </label>
+                        <select style= "font-weight: bolder; width: 300px;" id="despido">
+                            <option style= "font-weight: bolder;" value="menos 5">Sin preaviso y con menos de 5 años de antigüedad</option>
+                            <option style= "font-weight: bolder;" value="mas 5">Sin preaviso y con mas de 5 años de antigüedad</option>
+                            <option style= "font-weight: bolder;" value="con preaviso">Con Preaviso</option>
+                        </select><br><br>
+                        <h1 style="font-size: 1.2rem; font-weight: bolder;"></h1>Días trabajados en el mes del despido: <input type="number" name="dias" id="dias" step="1"  style="font-weight: bolder; height: 1.5rem; width: 3rem; margin: 0%; padding: 0%;"></h1><br><br>
+                        <h1 style="font-size: 1.2rem; font-weight: bolder;"></h1>Meses trabajados en el año del despido: <input type="number" name="meses" id="meses" step="1"  style="font-weight: bolder; height: 1.5rem; width: 3rem; margin: 0%; padding: 0%;"></h1><br><br>
+                        <label for="vacaciones">Antigüedad para Vacaciones: </label>
+                        <select style= "font-weight: bolder;" id="vacaciones">
+                            <option style= "font-weight: bolder;" value="-5">Antigüedad menor a 5 años</option>
+                            <option style= "font-weight: bolder;" value="+5">Antigüedad mayor a 5 años</option>
+                            <option style= "font-weight: bolder;" value="+10">Antigüedad mayor a 10 años</option>
+                            <option style= "font-weight: bolder;" value="+20">Antigüedad mayor a 20 años</option>
+                        </select><br><br>
+                        <input style="font-weight: bolder;" type="button" value="Calcular"> <input type="text" id="indemnización" style="font-weight: bolder; width: 5rem; height: 1.7rem;">
+                    </div>
+                </div>
+            </div>
+        </section>     
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
